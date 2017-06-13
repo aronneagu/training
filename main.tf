@@ -39,8 +39,8 @@ variable web_nums {
 resource "aws_instance" "web" {
   # ...
   ami                    = "ami-a4f9f2c2"
-  instance_type          = "t2.medium"
-  count                  = "2"
+  instance_type          = "t2.micro"
+  count                  = "3"
   subnet_id              = "subnet-7aba681d"
   vpc_security_group_ids = ["sg-00100979"]
 
